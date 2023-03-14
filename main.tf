@@ -23,3 +23,16 @@ output "vpc_enable_dns_support" {
 output "vpc_owner_id" {
   value = aws_vpc.vpc.owner_id
 }
+
+output "vpc_enable_dns_hostnames" {
+  value = aws_vpc.vpc.enable_dns_hostnames
+}
+
+output "vpc_default_route_table_id" {
+  value = aws_vpc.vpc.default_route_table_id
+}
+
+output "vpc_default_security_group_id" {
+  value = aws_vpc.vpc.default_security_group_id
+}
+
